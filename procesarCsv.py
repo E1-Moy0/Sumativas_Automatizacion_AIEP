@@ -40,7 +40,7 @@ def obtener_signo_zodiacal(fecha_nacimiento):
 
     return "Signo no encontrado"
 
-# Determinar la generación con "if"
+# Determinar la generación utilizando "if"
 def obtener_generacion(fecha_nacimiento):
     anio = datetime.strptime(fecha_nacimiento, "%d/%m/%Y").year
     if 1946 <= anio <= 1964:
