@@ -1,6 +1,6 @@
 import csv
 
-# Datos de ejemplo (sin tildes)
+# Datos
 personas = [
     ("Cristian Morales", "12/01/1990"),
     ("Camila Munoz", "24/07/1985"),
@@ -19,10 +19,9 @@ personas = [
     ("Esteban Navarro", "05/09/1987")
 ]
 
-# Generar el archivo CSV
+# Generar el archivo CSV de entrada
 with open('entrada.csv', mode='w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file, delimiter=';')
-    # Escribir los datos
     writer.writerows(personas)
 
 print("Archivo CSV de entrada generado.")
